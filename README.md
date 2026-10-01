@@ -27,5 +27,5 @@ This project is a static HTML page that presents a survey to users. It is design
 ## Project Structure
 
 ```bash
-project/
+survey-form/
 └── index.html
