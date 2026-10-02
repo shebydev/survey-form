@@ -23,9 +23,3 @@ This project is a static HTML page that presents a survey to users. It is design
   - Billing & Invoicing
 - Additional comments section for suggestions or issues
 - Submit button to send the survey response
-
-## Project Structure
-
-```bash
-survey-form/
-└── index.html
