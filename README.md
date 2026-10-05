@@ -16,6 +16,7 @@ This project is a static HTML page that presents a survey to users. It is design
   - Very Satisfied
   - Neutral
   - Unsatisfied
+- Age of experience 
 - Feature usage selection
   - Customer Support
   - Online Web Portal
