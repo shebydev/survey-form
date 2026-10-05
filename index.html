@@ -12,57 +12,66 @@
       <form action="#" method="get">
         <fieldset>
           <legend>Contact Information</legend>
-          
-          <label for="fullname">Full Name: </label>
-          <input type="text" id="fullname" name="fullname" required placeholder="John Jose">
-          
-          <label for="email">Email Address: </label>
-          <input type="email" id="email" name="email" required placeholder="johnjose@example.com">
-
-          <label for="age">Age Range </label>
-          <select id="age" name="age">
-            <option value="select-your-age-group">Select your age group</option>
-            <option value="under-18">Under 18</option>
-            <option value="18-24">18-24</option>
-            <option value="25-34">25-34</option>
-            <option value="35-54">35-54</option>
-            <option value="55-or-older">55 or older</option>
-          </select>
+          <div>
+            <label for="fullname">Full Name: </label>
+            <br>
+            <input type="text" id="fullname" name="fullname" required placeholder="John Jose">
+          </div>
+          <div>
+            <label for="email">Email Address: </label>
+            <br>
+            <input type="email" id="email" name="email" required placeholder="johnjose@example.com">
+          </div>
+          <div>
+            <label for="number">Age:  </label>
+            <br>
+            <input type="number" id="number" name="age" min="18" max="100" placeholder="18" required>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Service Rating </legend>
-          <div>How satisfied are you with our product/service: </div>
-
-          <input type="radio" name="satisfiaction" value="very-satified">
-          <label >Very Satisfied</label>
-
-          <input type="radio" name="satisfiaction" value="neutral">
-          <label>Neutral</label>
-
-          <input type="radio" name="satisfiaction" value="unsatisfied">
-          <label>Unsatisfied</label>
-
-          <div>Which features do you use most frequently? (Select all that apply)</div>
-
-          <input type="checkbox" name="feature" value="customer-support">
-          <label>Customer Support</label>
-
-          <input type="checkbox" name="feature" value="online-web-portal">
-          <label>Online Web Portal</label>
-
-          <input type="checkbox" name="feature" value="mobile-application">
-          <label>Mobile Applivation</label>
-
-          <input type="checkbox" name="feature" value="billing-&-invoicing">
-          <label>Billing & Invoicing</label>
+          <div> <span>How satisfied are you with our product/service: </span>
+            <div>
+              <input type="radio" id="very-satified" name="satisfiaction" value="very-satified">
+              <label for="very-satified">Very Satisfied</label>
+            </div>
+            <div>
+              <input type="radio" id="neutral" name="satisfiaction" value="neutral">
+              <label for="neutral">Neutral</label>
+            </div>
+            <div>
+              <input type="radio" id="unsatisfied" name="satisfiaction" value="unsatisfied">
+              <label for="unsatisfied">Unsatisfied</label>
+            </div>
+        </div>
+          <div><span>nWhich features do you use most frequently? (Select all that apply) </span>
+            <div>
+              <input type="checkbox" id="customer-support" name="feature" value="customer-support">
+              <label for="customer-support">Customer Support</label>
+            </div>
+            <div>
+              <input type="checkbox" id="online-web-portal" name="feature" value="online-web-portal">
+              <label for="online-web-portal">Online Web Portal</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mobile-application" name="feature" value="mobile-application">
+              <label for="mobile-application">Mobile Applivation</label>
+            </div>
+            <div>
+              <input type="checkbox" id="billing-invoicing" name="feature" value="billing-&-invoicing">
+              <label for="billing-invoicing">Billing & Invoicing</label>
+            </div>
+        </div>
         </fieldset>
 
         <fieldset>
           <legend>Additional Comments</legend>
           <label for="comment">How can we improve your expriences</label>
+          <br>
           <textarea id="comment" cols="38" rows="5" placeholder="Share any thoughts suggestions or issues..."></textarea>
         </fieldset>
+        <br>
         <button type="submit">Submit Survey</button>
       </form>
     </main>
