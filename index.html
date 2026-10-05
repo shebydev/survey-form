@@ -7,23 +7,23 @@
   </head>
   <body>
     <main>
-      <h1>Customer Satisfaction Survey </h1>
-      <p>We value your feedback! Please take a few minutes to share your thoughts and help us improve our services </p>
-      <form action="#" method="get">
+      <h1 id="title">Customer Satisfaction Survey </h1>
+      <p id="description">We value your feedback! Please take a few minutes to share your thoughts and help us improve our services </p>
+      <form action="#" method="get" id="survey-form">
         <fieldset>
           <legend>Contact Information</legend>
           <div>
-            <label for="fullname">Full Name: </label>
+            <label id="name-label" for="name">Full Name: </label>
             <br>
-            <input type="text" id="fullname" name="fullname" required placeholder="John Jose">
+            <input type="text" id="name" name="fullname" required placeholder="John Jose">
           </div>
           <div>
-            <label for="email">Email Address: </label>
+            <label id="email-label" for="email">Email Address: </label>
             <br>
             <input type="email" id="email" name="email" required placeholder="johnjose@example.com">
           </div>
           <div>
-            <label for="number">Age:  </label>
+            <label id="number-label" for="number">Age:  </label>
             <br>
             <input type="number" id="number" name="age" min="18" max="100" placeholder="18" required>
           </div>
@@ -44,6 +44,16 @@
               <input type="radio" id="unsatisfied" name="satisfiaction" value="unsatisfied">
               <label for="unsatisfied">Unsatisfied</label>
             </div>
+        <div>
+          <label for="dropdown">Age of exprience</labrl>
+          <select id="dropdown" name="age">
+            <option value="1-year">1 Year</option>
+            <option value="2-year">2 Year</option>
+            <option value="3-year">3 Year</option>
+            <option value="4-year">4 Year</option>
+            <option value="5-year">5 Year</option>
+          </select> 
+        </div>
         </div>
           <div><span>nWhich features do you use most frequently? (Select all that apply) </span>
             <div>
@@ -72,7 +82,7 @@
           <textarea id="comment" cols="38" rows="5" placeholder="Share any thoughts suggestions or issues..."></textarea>
         </fieldset>
         <br>
-        <button type="submit">Submit Survey</button>
+        <button id="submit" type="submit">Submit Survey</button>
       </form>
     </main>
   </body>
