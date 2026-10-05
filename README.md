@@ -11,7 +11,7 @@ This project is a static HTML page that presents a survey to users. It is design
 - Contact information section
   - Full name
   - Email address
-  - Age range
+  - Age
 - Service satisfaction rating
   - Very Satisfied
   - Neutral
